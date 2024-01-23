@@ -11,7 +11,7 @@
             background-color: #f4f4f4;
             color: #333;
             margin: 0;
-            padding: 0;
+            padding: 25px 37px;
         }
         
         header {
@@ -21,6 +21,59 @@
             font-size: 24px;
             font-variant: small-caps;
             font-weight: bold;
+            height: 60px;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black
+        }
+
+        .header-bottom-border {
+            border-bottom: 3px solid;
+            margin-top: 2px;
+        }
+
+        .address-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-variant: small-caps;
+            font-size: 12px;
+        }
+
+        .address-wrapper > ul > li {
+            display: inline;
+        }
+
+        .heading {
+            position: relative;
+            text-align: center;
+        }
+
+        .heading::before {
+            border-top: 1px solid black;
+            content: "";
+            display: block;
+            height: 1px;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            z-index: 1
+        }
+
+        .section-title {
+            display: inline-block;
+            position: relative;
+            z-index: 5;
+            font-size: 15px;
+            text-align: center;
+            font-variant: small-caps;
+            background-color: #f4f4f4;
+            padding: 0px 10px;
+        }
+
+        .info-block {
+            font-size: 12px;
+            text-align: left;
+            margin: 10px 0px;
         }
     </style>
 </head>
@@ -28,5 +81,36 @@
     <header>
         <div class="name">Berke Altıparmak</div>
     </header>
+    <div class="header-bottom-border"></div>
+    <div class="address-wrapper">
+        <ul>
+            <li>Istanbul, Turkey, 34732</li>
+            <li>&#x2022</li>
+            <li>+90 505 285 67 97</li>
+            <li>&#x2022</li>
+            <li>berkealtiparmak@outlook.com</li>
+        </ul>
+    </div>
+    <div class="heading">
+        <div class="section-title">Professional Summary</div>
+    </div>
+    <div class="info-block">Detail-oriented mid level full-stack developer with a demonstrated history of strong problem-solving abilities and collaborative teamwork. Continuously adapting to emerging technologies for streamlined and innovative development.</div>
+    <div class="heading">
+        <div class="section-title">Skills</div>
+    </div>
+    <div class="info-block">
+        <ul>
+            <li>HTML, CSS, JavaScript, TypeScript, Python, Go, PHP</li>
+            <li>Node.js, jQuery, Ajax, React, React Native, Expo, Firebase, Express.js, Laravel, Next.js</li>
+            <li>Machine Learning, NLP, AI, Embedded Systems (Arduino)</li>
+            <li>SQL, PostgreSQL</li>
+            <li>Web Scraping</li>
+            <li>WebGL, OpenGL</li>
+            <li>Agile Methodologies, Kanban, Jira</li>
+        </ul>
+    </div>
+    <div class="heading">
+        <div class="section-title">Work History</div>
+    </div>
 </body>
 </html>
